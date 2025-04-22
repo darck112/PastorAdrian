@@ -1,0 +1,49 @@
+Search.appendIndex(
+    [
+                {
+            "fqsen": "\\App\\Http\\Controllers\\ApiAPO\\APOMascotasControllerAPI",
+            "name": "APOMascotasControllerAPI",
+            "summary": "Class\u0020APOMascotasControllerAPI",
+            "url": "classes/App-Http-Controllers-ApiAPO-APOMascotasControllerAPI.html"
+        },                {
+            "fqsen": "\\App\\Http\\Controllers\\ApiAPO\\APOMascotasControllerAPI\u003A\u003AlistarMascotasAPO\u0028\u0029",
+            "name": "listarMascotasAPO",
+            "summary": "Este\u0020m\u00E9todo\u0020obtiene\u0020el\u0020usuario\u0020autenticado\u0020y\u0020lista\u0020todas\u0020sus\u0020mascotas.",
+            "url": "classes/App-Http-Controllers-ApiAPO-APOMascotasControllerAPI.html#method_listarMascotasAPO"
+        },                {
+            "fqsen": "\\App\\Http\\Controllers\\ApiAPO\\APOMascotasControllerAPI\u003A\u003AcrearMascotaAPO\u0028\u0029",
+            "name": "crearMascotaAPO",
+            "summary": "Crea\u0020una\u0020nueva\u0020mascota\u0020asociada\u0020al\u0020usuario\u0020autenticado.",
+            "url": "classes/App-Http-Controllers-ApiAPO-APOMascotasControllerAPI.html#method_crearMascotaAPO"
+        },                {
+            "fqsen": "\\App\\Http\\Controllers\\ApiAPO\\APOMascotasControllerAPI\u003A\u003AborrarMascotaAPO\u0028\u0029",
+            "name": "borrarMascotaAPO",
+            "summary": "Elimina\u0020una\u0020mascota\u0020espec\u00EDfica\u0020del\u0020usuario\u0020autenticado.",
+            "url": "classes/App-Http-Controllers-ApiAPO-APOMascotasControllerAPI.html#method_borrarMascotaAPO"
+        },                {
+            "fqsen": "\\",
+            "name": "\\",
+            "summary": "",
+            "url": "namespaces/default.html"
+        },                {
+            "fqsen": "\\App\\Http\\Controllers\\ApiAPO",
+            "name": "ApiAPO",
+            "summary": "",
+            "url": "namespaces/app-http-controllers-apiapo.html"
+        },                {
+            "fqsen": "\\App\\Http\\Controllers",
+            "name": "Controllers",
+            "summary": "",
+            "url": "namespaces/app-http-controllers.html"
+        },                {
+            "fqsen": "\\App\\Http",
+            "name": "Http",
+            "summary": "",
+            "url": "namespaces/app-http.html"
+        },                {
+            "fqsen": "\\App",
+            "name": "App",
+            "summary": "",
+            "url": "namespaces/app.html"
+        }            ]
+);
