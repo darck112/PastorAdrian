@@ -6,7 +6,7 @@
  * @version 1.0.0
  *
  * Script utilizado en la tarea de otra asignatura que usaremos como ejemplo para la documentación con phpDocumentor.
- *
+ * Este comentario es para hacer un cambio para las pruebas de git y github, añadido posteriormente de la documentacion.
  */
 namespace App\Http\Controllers\ApiAPO;
 
