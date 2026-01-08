@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Respuestas al ejercicio 1</title>
+    </head>
+
+    <body>
+        <H1>Autor/a: Adrian Pastor Orellana</H1>
+        <H2>Respuesta al ejercicio 1.1</H2>
+        <div>
+            <p>Indicar aquí la respuesta al ejercicio 1.1</p>
+            <p>a)Para mí, creo que es bastante mejorable la de seguridad social.
+                https://www.seg-social.es/wps/portal/wss/internet/Inicio
+            </p>
+            <p>b)Básicamente de todo lo relacionado con tramites de ciudadanos, desde consultar una 
+                vida laboral, hasta dar un alta, una baja, modificaciones de las horas de trabajo, diversos
+                tipos de certificados, subvenciones y un largo etc.</p>
+            <p>c)Es una página muy poco intuitiva en muchos aspectos, yo que trabajo habitualmente con ella, 
+                hay veces que para encontrar ciertas cosas es difícil, no me quiero pensar una persona que llegue 
+                de nuevas. Además de lo anterior, muchas de las interfaces de su sistema red están algo desfasadas. </p>
+            <p>d)Si, sobre todo temas de formularios que recogen información importante, como comentaba anteriormente,
+                en su sistema red tienen varios formularios que deben ser tipo post, en los que tu introduces unos 
+                datos y quedan registradas unas acciones. Ejemplo dar de alta un trabajador en una empres en la
+                seguridad social siempre que haya unos datos mínimos rellenos en formato adecuado, sino devuelven 
+                error.</p>
+            <p>e)Pues prácticamente toda la parte de sistema red, que tiene una interfaz muy arcaica, poco intuitiva,
+                sin diseño responsive entre otras muchas cosas. Y por otro lado, tienen el sistema siltra, que es una app de escritorio ahora mismo y están en proceso de introducirlo via web, algo parecido a lo que se hizo en su momento en hacienda con la renta web. Creo que es una mejora muy necesaria y que facilite y agilice ciertos tramites, aliviando también la carga de su programa de los sistemas cliente, al no ejecutar ni tener que tener instalada una app de escritorio.  </p>
+            <p>f)Pues como bien se indica en la teoría en el caso en el desarrollo web en el lado del servidor, los
+                frameworks generalmente proporcionan servicios como autenticación, mapeado objeto-relacional, 
+                validación de datos, motores de plantillas, facilidades de depuración, etc. además de una estructura
+                estándar y predefinida que simplemente hay que extender.</p>
+        </div>
+        <H2>Respuesta al ejercicio 1.2</H2>
+        <div>
+            <p>Pues en este caso podríamos poner un ejemplo bastante claro que podría darse en la pagina web seleccionada de la seguridad social.  Antes de comentar el caso de uso, pongo un poco el contexto. A un profesional le piden dar de alta a un trabajador en una determinada empresa.  Lo primero que hay que hacer es ir a la pagina de la seguridad social y entrar en el sistema red, en este caso con un certificado digital, y buscar entre las opciones que existen la de dar de alta a trabajadores, donde comenzara nuestro caso de uso. 
+            <p>  1.	El profesional visualiza un formulario en el que tiene que rellenar unos datos acerca de la persona que va a trabajar y de la empresa en la cual será dado de alta, una vez relleno, hay que pinchar en el botón continuar.
+            </p>
+            <p> 2.	Al igual que en el caso de ejemplo, los siguientes pasos serán los mismos, el navegador realiza una petición tipo HTTP POST al servidor web.
+            </p>
+            <p> 3.	El servidor web recibe la petición con los datos del formulario, y, siguiendo su configuración, detecta que esa petición corresponde a un script PHP y que debe ser redireccionada al motor de ejecución PHP.
+            </p>
+            <p> 4.	El motor PHP (PHP engine) se arranca e inicia la ejecución del script el cual contiene:<br>
+
+                o	Código para comprobar si los datos recibidos son correctos.<br>
+                o	Código para almacenar los datos recibidos en la base de datos.<br>
+                o	Código para generar HTML con la respuesta al candidato a la candidata.<br>
+            </p>
+            <p> 5.	Una vez que el motor PHP ha terminado de ejecutar el script, el HTML generado es enviado al servidor web como resultado de la ejecución.
+            </p>
+            <p> 6.	El servidor web recoge el resultado generado por el motor PHP y lo envía al navegador con una respuesta HTTP.
+            </p>
+            <p> 7.	El navegador HTTP recibe la respuesta que incluye el HTML y lo renderiza para que la persona candidata lo vea.
+            </p>
+            <p> 8.	En este caso, podemos añadir que la respuesta, si todos los datos han sido correctos, es otro formulario en HTML con otra serie de datos necesarios en determinado formato que quedaran grabados en su base de datos para que realmente el alta quede grabada y realizada. Por tanto, una vez relleno todo esto volveríamos al paso numero 2 donde el navegador realiza una petición tipo HTTP POST al servidor web y el servidor la recibe, detecta que esa petición corresponde a un script PHP y que debe ser redireccionada al motor de ejecución PHP. Este se arranca e inicia la ejecución del script el cual contiene: haciendo las comprobaciones, almacenando el código y generando el HTML DE RESPUESTA. Cuando se termina es enviado al servidor web y este recoge el resultado y lo envía al navegador. 
+            </p>
+            <p> 9.	El navegador HTTP recibe la respuesta que incluye el HTML y lo renderiza para que la persona candidata lo vea. En este caso ya si, recibiremos vía navegador web un documento descargable en el cual se acredita con una firma electrónica (CSV) y una serie de datos como la hora, el día etc en el cual se ha realizado todo el proceso
+            </p>
+        </div>
+        <H2>Respuesta al ejercicio 1.3</H2>
+        <div>
+            <table border="1" style="width: 80%;">
+                <tbody>
+                    <tr>
+                        <th style="width: 20%; height: 16px;">Tecnología</th>
+                        <th style="width: 80%; height: 16px;">¿Dónde y como se usaría en el contexto de los ejercicios 1.1 y 1.2?</th>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%; height: 16px;">HTTP</td>
+                        <td style="width: 80%; height: 16px;">Aunque el uso de HTTP sin cifrado no es 
+                            recomendable para sitios gubernamentales; se podría utilizar quizás en entornos
+                            en los cuales la seguridad no sea un elemento crítico. Un ejemplo sería cargar 
+                            información pública sobre trámites, o cualquier contenido estático, zonas públicas, 
+                            etc, que no haya necesidad de trabajar con datos sensibles. </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%; height: 16px;">HTTPS</td>
+                        <td style="width: 80%; height: 16px;">Debería usarse en toda la pagina web por privacidad
+                            y seguridad, ya que, a diferencia del anterior, cifra la información transmitida 
+                            entre el usuario y el servidor. Por ello es más recomendable justo en los casos donde
+                            se trabaja con información sensible, por ejemplo, en las zonas donde se solicitan
+                            certificados que hay que utilizar usuarios y contraseñas, certificados, claves pin. </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%; height: 16px;">HTML</td>
+                        <td style="width: 80%; height: 16px;">Es el lenguaje base de cualquier página web,
+                            determina TODA la estructura y contenido de todas las páginas de la web y donde se 
+                            pueden enlazar con el resto de lenguajes para el resto de funciones como el CSS,
+                            PHP, JavaScript </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%; height: 16px;">PHP</td>
+                        <td style="width: 80%; height: 16px;">Usado en el backend para la gestión de procesos dinámicos.
+                            Podría utilizarse para gestionar las interacciones entre el usuario y la base de datos, como en el 
+                            caso de consultar los registros de cotización, cálculo de pensiones o para procesar solicitudes de 
+                            prestaciones, entre otras funciones ya descritas en otros apartados que también se pueden hacer. </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%; height: 16px;">CSS</td>
+                        <td style="width: 80%; height: 16px;">Se utiliza para mejorar la apariencia visual de toda la web,
+                            mejora la accesibilidad y usabilidad, se puede utilizar para dar un formato estándar a toda la
+                            pagina web y que haya un equilibrio.</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%; height: 16px;">SQL</td>
+                        <td style="width: 80%; height: 16px;">Sería la base de datos donde se almacena toda la información. 
+                            Por ejemplo, cuando un usuario consulta su historial laboral, el sistema utilizaría SQL para extraer
+                            la información correspondiente desde una base de datos</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%; height: 16px;">JavaScript</td>
+                        <td style="width: 80%; height: 16px;">Se utiliza para mejorar la interactividad de la Web. En este caso 
+                            también se puede usar para validar formularios, crear los gráficos de las cotizaciones, o incluso para
+                            contenidos dinámicos como un calendario de fechas para coger una cita. </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <H2>Respuesta al ejercicio 1.4</H2>
+        <div>
+            <p>Lo primero que hay que hacer es ir a la url https://www.apachefriends.org/es/index.html y 
+                seleccionar para que sistema lo queremos</p>
+            <p>  <img src="Captura de pantalla 2025-09-23 173604.png" alt="captura 1"/></p>
+            <p>Posteriormente iniciamos su descarga e instación</p>
+            <p><img src="Captura de pantalla 2025-09-23 174726.png" alt="captura 2"/></p>
+            <p>Por ultimo podemos arrancar y parar el servidor desde el panel de control</p>
+            <p><img src="Captura de pantalla 2025-09-23 175203.png" alt="captura 3"/></p>
+            
+        </div>
+
+        <H2>Respuesta al ejercicio 1.4</H2>
+        <div>
+            <p>Vamos a la carpeta htdocs y creamos el script phpinfo.php con este contenido <?php phpinfo(); ?>,
+            posteriormente escribimos en el navegador: http://localhost/phpinfo.php y el resultado es el siguiente:</p>
+            <p>   <img src="Captura de pantalla 2025-09-23 175709.png" alt="captura 4"/></p>
+           
+        </div>
+
+        <H2>Respuesta al ejercicio 1.5</H2>
+        <div>
+            <p>Para esta parte, podemos ir al directorio de php.ini o bien desde el propio panel de control
+            también podríamos acceder. Por comodidad yo he elegido abrirlo con visual studio code, pues me gusta
+            la paleta de colores que utiliza para este tipo de archivos y para mi es intuitiva usando el buscador.
+            </p>
+            <P> <img src="Captura de pantalla 2025-09-23 180556.png" alt="captura 5"/> </P>
+            <P><img src="Captura de pantalla 2025-09-23 180719.png" alt="captura 6"/>  </P>
+            
+        </div>
+    </body>
+
+</html>

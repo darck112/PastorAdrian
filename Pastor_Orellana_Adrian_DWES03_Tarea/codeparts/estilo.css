@@ -1,0 +1,191 @@
+/* =========================
+   ESTILO GENERAL
+========================= */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor general implícito */
+body > h1,
+body > h2,
+body > p,
+body > form,
+body > table,
+body > div,
+body > a{
+  width: 90%;
+  max-width: 1100px;
+  margin: 15px auto;
+}
+
+/* =========================
+   TÍTULOS
+========================= */
+h1 {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+h2 {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+  margin-top: 30px;
+}
+
+/* =========================
+   ENLACES
+========================= */
+a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a.boton-enlace {
+  display: inline-block;
+  margin-top: 10px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 5px 0;
+}
+
+/* =========================
+   MENSAJES
+========================= */
+.mensaje-exito {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 12px;
+  border: 1px solid #c3e6cb;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.mensaje-error {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 12px;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+/* =========================
+   FORMULARIOS
+========================= */
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* =========================
+   BOTONES
+========================= */
+input[type="submit"] {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #004c99;
+}
+
+/* Botón eliminar */
+.btn-eliminar {
+  background-color: #cc0000;
+}
+
+.btn-eliminar:hover {
+  background-color: #990000;
+}
+
+/* =========================
+   TABLAS
+========================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* =========================
+   ESTADOS
+========================= */
+.selected {
+  font-weight: bold;
+}
+/* =========================
+   ZONA DE ACCIONES / ENLACES
+========================= */
+.acciones {
+  width: 90%;
+  max-width: 1100px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.acciones a,
+.acciones input[type="submit"] {
+  margin: 0 10px;
+}

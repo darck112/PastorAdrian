@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Respuestas ejercicio 1</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    
+<HR>
+<a href="./index.php"> Ir a la página principal </a>
+<a href="./insertar/form-insertar-pelicula.php"> Ir a formulario para insertar película | </a>
+
+<HR>
+    <H1>Autor/a: Adrián Pastor Orellana - Ejercicio 1 - Tarea 2 </H1>
+
+      <h2>Respuesta Ejercicio 1 Pregunta 1</h2>
+
+    <h3>Bases de datos relacionales</h3>
+    <p>Una base de datos relacional es un tipo de base de datos que organiza los datos en tablas compuestas por filas y columnas. Cada tabla contiene datos sobre un tema específico, y las tablas pueden estar relacionadas entre sí mediante claves primarias y externas.</p>
+    <p>Las características principales de este modelo son:</p>
+    <ol>
+        <li><strong>Estructura en tablas:</strong> Los datos se almacenan en tablas, donde cada fila representa un registro y cada columna un atributo del registro.</li>
+        <li><strong>Relaciones:</strong> Las tablas pueden estar relacionadas entre sí mediante claves, lo que permite realizar consultas complejas y obtener información combinada de varias tablas.</li>
+        <li><strong>SQL:</strong> Se utiliza el lenguaje SQL (Structured Query Language) para gestionar y consultar los datos.</li>
+        <li><strong>Propiedades ACID:</strong> Las bases de datos relacionales garantizan la Atomicidad, Coherencia, Aislamiento y Durabilidad de las transacciones.</li>
+    </ol>
+
+    <h3>Bases de datos NoSQL</h3>
+    <p>Las bases de datos NoSQL (Not Only SQL) son un tipo de base de datos no relacional que permite almacenar y consultar datos de manera diferente a las bases de datos relacionales tradicionales. Aquí te dejo algunas características clave:</p>
+    <ol>
+        <li><strong>Flexibilidad de Esquema:</strong> No requieren un esquema fijo, lo que permite almacenar datos no estructurados o semiestructurados, como documentos JSON.</li>
+        <li><strong>Escalabilidad Horizontal:</strong> Pueden escalarse fácilmente añadiendo más servidores en lugar de mejorar el hardware existente.</li>
+        <li><strong>Alta Disponibilidad y Fiabilidad:</strong> Al ser distribuidas, los datos se copian y almacenan en varios servidores, lo que garantiza que la base de datos siga funcionando incluso si algunos servidores fallan.</li>
+        <li><strong>Velocidad y Rendimiento:</strong> Son ideales para aplicaciones que requieren baja latencia y altas velocidades de consulta.</li>
+    </ol>
+
+    <p>Existen varios tipos de bases de datos NoSQL, cada una optimizada para diferentes casos de uso:</p>
+    <ol>
+        <li><strong>Bases de datos de documentos:</strong> Almacenan datos en colecciones, siendo los elementos de cada una de esas colecciones documentos que contienen pares clave/valor. Es como un sistema que nos permite almacenar elementos especificados por el lenguaje JSON. Cada documento puede tener una estructura diferente, como hemos señalado antes, lo que facilita la adaptación a cambios en el esquema de datos incluso entre documentos que pertenecen a una misma colección.</li>
+        <li><strong>Bases de datos tabulares:</strong> Son más conocidas en el sistema de bases de datos del modelo relacional, pero también las encontramos en el modelo NoSQL, aunque en menor medida. Este modelo permite el almacenamiento en tablas, aunque admiten mayor versatilidad, ya que permite variar el formateo de los registros en ellas.</li>
+        <li><strong>Bases de datos orientadas a grafo:</strong> Este modelo de bases de datos NoSQL está compuesto por documentos que se relacionan entre sí y que permiten representar relaciones complejas entre los datos. Son ideales para aplicaciones que requieren un alto nivel de conectividad como redes sociales, bases de conocimiento o inteligencia artificial.</li>
+        <li><strong>Bases de datos de clave-valor:</strong> Son las más sencillas de todas y almacenan datos en una organización de pares de clave y valor. Son las que permiten más altas velocidades en la lectura y escritura de datos y se usan principalmente en sistemas de almacenamiento en caché.</li>
+        <li><strong>Bases de datos multivalor:</strong> Permiten trabajar también con pares clave/valor, solo que permiten almacenar múltiples valores asociados a una clave. Esto puede hacerlas útiles para aplicaciones que gestionan datos complejos y variables.</li>
+        <li><strong>Bases de datos de tiempo real (Time-Series):</strong> Especializadas en trabajo con datos en tiempo real. Este modelo de sistemas gestores de bases de datos nos ofrece actualizaciones inmediatas de los datos que hemos consultado, propagando los valores en el caso que haya cambios.</li>
+        <li><strong>Bases de datos de almacén de objetos (Object Store):</strong> Son elementos más abstractos que los documentos, ya que pueden incluso servir para almacenar binarios o archivos multimedia. Son ideales para aplicaciones que gestionan imágenes o contenido multimedia.</li>
+        <li><strong>Bases de datos de Memoria (In-Memory):</strong> Almacenan datos en la memoria RAM del ordenador, en lugar de en discos. Esto supone una altísima velocidad, aunque también una mayor volatilidad de la información.</li>
+        <li><strong>Bases de datos distribuidas:</strong> Los datos pueden almacenarse en distintos sistemas alejados, incluso en distintas redes. Estos sistemas se conocen como nodos, que pueden albergar a una misma base de datos aportando mayor disponibilidad o replicabilidad. Son adecuadas para una escalabilidad horizontal y la distribución geográfica de los datos en lugares distintos de redes.</li>
+    </ol>
+    <p>Por tanto, como conclusión, viendo las distintas opciones que tenemos, una de las principales que deberíamos valorar serían las bases de datos relacionales, pues vamos a trabajar con un almacén en el que vamos a tener muchos datos de distintos departamentos, como proveedores, clientes, gastos, costes, ingresos, stock, etc. por otro lado, de las bases NoSQL como vemos tenemos gran cantidad de opciones, pero viendo y analizando las descripciones de cada una, quizás podría ser interesante una base de datos distribuida, pues vamos a tener varios departamentos en una empresa, no solo un almacén, o incluso varios almacenes en general. O bases de datos en tiempo real, que nos permitan por ejemplo saber como...</p>
+
+    <h2>Respuesta Ejercicio 1 Pregunta 2</h2>
+    <p>Creo que el más interesante serían las bases de datos relacionales, ya que ofrecen una robustez en las transacciones, haciéndolas seguras y eficientes, asegurando la integridad de los datos. Además, como he comentado anteriormente, en un almacén vamos a tener que realizar unas operaciones si, pero estas al final van a tener que verse reflejadas en otros departamentos. Por ejemplo, si tenemos vendemos productos en una tienda, vamos a tener que ver como está el almacén para solicitar más, por otro lado, la venta debe aparecer en el departamento de contabilidad, al mismo tiempo que conforme se vaya agotando el almacén habrá que hacer compras y posteriormente imputar el coste y el gasto de la operación. Es</p>
+
+    <h2>Respuesta Ejercicio 1 Pregunta 3</h2>
+    <p>Al utilizar MySQL o MariaDB, se opta por un sistema de base de datos relacional, los cuales podrían ser perfectos para la gestión de almacenes, pues se pueden relacionar datos mediante claves y se permite realizar consultas complejas. Además, PHP se puede integrar con estos sistemas a través de interfaces específicas, optimizando su uso en una aplicación web.</p>
+
+    <h2>Respuesta Ejercicio 1 Pregunta 4</h2>
+    <ol>
+        <li>Por un lado, encontramos <strong>MySQLi</strong>, que es una extensión de PHP diseñada para interactuar con bases de datos MySQL o MariaDB. Proporciona una interfaz más moderna y mejorada, además soporta tanto el enfoque procedural como el orientado a objetos, ofreciendo mayor flexibilidad a los desarrolladores. Para utilizar MySQLi orientado a objetos, se crea una instancia de la clase mysqli, pasando como parámetros el nombre del servidor, el nombre de usuario, la contraseña y el nombre de la base de datos.</li>
+        <li>Por otro PALABRA <strong>PHP Data Objects (PDO)</strong> es una extensión de PHP diseñada para interactuar con bases de datos mediante una interfaz unificada. Esta extensión permite ejecutar operaciones como consultas y actualizaciones de datos utilizando una misma sintaxis, independientemente del tipo de base de datos. PDO soporta múltiples controladores de bases de datos, como MySQL, MariaDB, PostgreSQL, SQLite, SQL Server, Oracle Database, y más, facilitando la portabilidad del código. Para utilizar PDO, se crea una instancia de la clase PDO, pasando como parámetros el DSN (Data Source Name), el nombre de usuario y la contraseña.</li>
+    </ol>
+    <p>Las ventajas de PDO en comparación con MySQLi son significativas y variadas, destacándose en diversos aspectos que mejoran tanto la funcionalidad como la usabilidad de la interacción con bases de datos:</p>
+    <ul>
+        <li><strong>Soporte para múltiples tipos de bases de datos:</strong> PDO no se limita solo a MySQL y MariaDB; permite trabajar con diversas bases de datos como PostgreSQL, SQLite, SQL Server, Oracle Database, entre otras.</li>
+        <li><strong>Portabilidad del código:</strong> al usar una API unificada, el código se puede migrar fácilmente entre diferentes Sistemas Gestores de Bases de Datos (SGBD).</li>
+        <li><strong>Manejo de excepciones:</strong> PDO ofrece un manejo robusto de excepciones, facilitando la gestión y depuración de errores.</li>
+    </ul>
+    <p>Aunque en general se recomienda usar PDO sobre MySQLi, hay casos muy específicos en los que MySQLi es una mejor opción. Por ejemplo, cuando se requiere la funcionalidad más reciente y particular de MySQL o MariaDB.</p>
+
+    <h2>Respuesta Ejercicio 1 Pregunta 5</h2>
+
+    <h3>MySQL</h3>
+    <p>MySQL es una base de datos relacional que utiliza SQL para gestionar y manipular datos. Es conocida por su facilidad de uso, robustez y amplia adopción en aplicaciones web.</p>
+    <h4>Ventajas:</h4>
+    <ol>
+        <li><strong>Facilidad de uso:</strong> MySQL es fácil de instalar y configurar, lo que la hace accesible para desarrolladores de todos los niveles.</li>
+        <li><strong>ACID Compliance:</strong> Garantiza transacciones seguras y consistentes, lo cual es crucial para aplicaciones que requieren integridad de datos.</li>
+        <li><strong>Amplio soporte y comunidad:</strong> Hay una gran cantidad de recursos, documentación y soporte comunitario disponibles.</li>
+        <li><strong>Compatibilidad:</strong> Funciona bien con muchas plataformas y lenguajes de programación.</li>
+    </ol>
+    <h4>Limitaciones:</h4>
+    <ol>
+        <li><strong>Escalabilidad vertical:</strong> Aunque puede escalar horizontalmente, MySQL se beneficia más de la escalabilidad vertical (añadir más recursos a un solo servidor), lo que puede ser un problema para aplicaciones con grandes volúmenes de datos.</li>
+        <li><strong>Rendimiento en grandes volúmenes de datos:</strong> Puede no ser tan eficiente como las bases de datos NoSQL en manejar grandes cantidades de datos distribuidos.</li>
+    </ol>
+
+    <h3>Apache Cassandra</h3>
+    <p>Apache Cassandra es una base de datos NoSQL distribuida diseñada para manejar grandes cantidades de datos en múltiples servidores sin un punto único de fallo.</p>
+    <h4>Ventajas:</h4>
+    <ol>
+        <li><strong>Escalabilidad horizontal:</strong> Puede escalar fácilmente añadiendo más nodos al clúster, lo que la hace ideal para aplicaciones con grandes volúmenes de datos.</li>
+        <li><strong>Alta disponibilidad:</strong> Diseñada para no tener un punto único de fallo, asegurando que los datos estén siempre disponibles.</li>
+        <li><strong>Rendimiento:</strong> Excelente para aplicaciones que requieren alta velocidad de escritura y lectura, como sistemas de mensajería y análisis de datos en tiempo real.</li>
+    </ol>
+    <h4>Limitaciones:</h4>
+    <ol>
+        <li><strong>Complejidad:</strong> La configuración y gestión de Cassandra pueden ser más complejas en comparación con MySQL.</li>
+        <li><strong>Consistencia eventual:</strong> A diferencia de MySQL, Cassandra no garantiza la consistencia inmediata de los datos, lo que puede ser un problema para ciertas aplicaciones que requieren datos siempre actualizados.</li>
+    </ol>
+    
+    <p>De cara a utilizar uno u otro, va a depender de las características que necesitemos de la base de datos, por ejemplo, si la aplicación web requiere transacciones seguras y consistentes, como en sistemas de pago o gestión de inventarios, MySQL podría ser la mejor opción debido a su cumplimiento ACID y facilidad de uso. Por el contrario, si la aplicación necesita manejar grandes volúmenes de datos distribuidos y requiere alta disponibilidad y escalabilidad, como en aplicaciones de redes sociales o análisis de datos en tiempo real, Apache Cassandra sería más adecuada.</p>
+
+</body>
+
+</html>
